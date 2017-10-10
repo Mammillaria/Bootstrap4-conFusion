@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <!-- build:css css/main.css -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--Custom CSS-->
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <!--Bootstrap Social CSS -->
     <link rel="stylesheet" href="css/bootstrap-social.css">
+    <!-- endbuild -->
    
     <title>Ristorante Con Fusion</title>
 </head>
@@ -23,7 +25,7 @@
     <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
         <div class="container">
             
-             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
+             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41" alt="ConFusion restorant logo"></a>
               <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
 
@@ -47,7 +49,7 @@
 
     <!--Login Modal -->
     <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-dialog modal-lg">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
@@ -82,7 +84,7 @@
 
     <!--Reservation modal -->
      <div id="reserveModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-dialog modal-lg">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
@@ -133,11 +135,11 @@
                         <div class="col-sm-5">
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-success active"> 
-                                    <input type="radio" name="section" id="non-smoking" autocomplete="off" checked> Non-Smoking
+                                    <input type="radio" name="section" id="non-smoking" checked> Non-Smoking
                                 </label>
 
                                 <label class="btn btn-danger"> 
-                                    <input type="radio" name="section" id="non-smoking" autocomplete="off"> Smoking
+                                    <input type="radio" name="section" id="smoking"> Smoking
                                 </label>
                             </div>
                         </div>
@@ -150,7 +152,7 @@
                             <div class="input-group">
                                 <label class="sr-only">Date</label>
                                 <span class="input-group-addon" id="date-addon"><i class="fa fa-calendar"></i></span>   
-                                <input type="date" class="form-control"></input>
+                                <input type="date" class="form-control">
                             </div>
                         </div>
 
@@ -158,7 +160,7 @@
                             <div class="input-group">
                                 <label class="sr-only">Time</label>
                                 <span class="input-group-addon" id="time-addon"><i class="fa fa-clock-o"></i></span>   
-                                <input type="time" class="form-control"></input>
+                                <input type="time" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -190,10 +192,10 @@
                 </div>
                 
                     <div class="col-12 col-sm-3 align-self-center">
-                        <img src="img/logo.png" class="img-fluid">
+                        <img src="img/logo.png" class="img-fluid" alt="conFusion restaurant logo">
                     </div>
                     <div class="col-12 col-sm-3 align-self-center">
-                        <a type="button" class="btn btn-warning btn-block btn-sm" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                        <a class="btn btn-warning btn-block btn-sm" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
                     </div>
             </div>
         </div>
@@ -309,7 +311,7 @@
         </div>
 
         </div>
-    </div>
+
 
     <footer class="footer">
         <div class="container">
@@ -353,12 +355,13 @@
            </div>
         </div>
     </footer>
-
+    <!-- build:js js/main.js -->
      <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- endbuild -->
     
 
 
